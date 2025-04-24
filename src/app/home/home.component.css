@@ -1,0 +1,445 @@
+.container {
+    height: calc(100vh - 80px);
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    /* padding: 0 12rem; */
+    justify-content: center;
+    align-items: center;
+    gap: 8rem;
+    z-index: -1;
+    overflow: hidden;
+}
+
+.container .circle {
+    width: 566px;
+    height: 566px;
+    background: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 263px);
+    left: calc(50% - 283px);
+    z-index: 1;
+    box-shadow: 0 0 50px 35px #fff;
+}
+
+.container .left {
+    z-index: 10;
+    /* width: 40%; */
+    margin-top: -190px;
+}
+
+.container .left .x {
+    font-size: 800px;
+}
+
+.container .left .x img {
+    position: absolute;
+    top: 180px;
+    width: 400px;
+    left: 15rem;
+}
+
+.container .right {
+    z-index: 10;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.container .right h1 {
+    font-weight: bold;
+    width: 130%;
+}
+
+.container .right h1 span {
+    font-size: 44px;
+    margin-left: 10px;
+}
+
+.container .right p {
+    font-size: 20px;
+    font-weight: 100;
+    letter-spacing: 0.5px;
+    width: 130%;
+}
+
+.container .right button {
+    width: 40%;
+    font-size: 22px;
+    padding: 4px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    box-shadow: 0 0 15px 5px #f6f6f6;
+    transition: ease-in all 0.4s;
+}
+
+.container .right button:hover {
+    transform: scale(1.05);
+}
+
+/* About */
+
+.heading-a {
+    height: 77px;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    background: #f6f6f6;
+}
+
+.heading-a h1 {
+    font-size: 90px;
+    opacity: 0.3;
+    margin-top: 1rem;
+}
+
+.heading-a h2 {
+    margin-left: -50px;
+    font-size: 29px;
+    margin-top: 1rem;
+}
+
+.container-a {
+    height: calc(100vh - 77px);
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-a .left {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.container-a .left p {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    font-weight: 100;
+}
+
+.container-a .left button {
+    width: 35%;
+    font-size: 22px;
+    font-weight: 100;
+    border: none;
+    border-radius: 8px;
+    padding: 4px;
+    cursor: pointer;
+    background: #fff;
+    margin-top: 8px;
+    box-shadow: 0 0 15px 5px #e2e2e2;
+    transition: ease-in all 0.4s;
+}
+
+.container-a .left button:hover {
+    transform: scale(1.05);
+}
+
+.container-a .right {
+    width: 25%;
+}
+
+.container-a .right .circle {
+    width: 400px;
+    background: #fff;
+    height: 600px;
+    border-radius: 50%;
+    box-shadow: 0 0 50px 35px #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.circle img {
+    margin-left: -4rem;
+    height: 100%;
+    width: auto;
+}
+
+
+/* Service */
+
+.container-s {
+    height: calc(100vh - 77px);
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.container-s .left,
+.container-s .right {
+    width: 450px;
+    background: #fff;
+    box-shadow: 0 0 35px 15px #e2e2e2;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem 3rem;
+    transition: ease-in all 0.4s;
+    cursor: pointer;
+}
+
+.container-s .left:hover,
+.container-s .right:hover {
+    transform: scale(1.03);
+}
+
+.container-s .left img,
+.container-s .right img {
+    width: 50px;
+}
+
+.container-s .left p,
+.container-s .right p {
+    letter-spacing: 0.5px;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+
+/* Project */
+
+.container-p {
+    background: #f6f6f6;
+    height: calc(100vh - 77px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+
+.container-p .card {
+    width: 350px;
+    height: 525px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 0 25px 10px #e2e2e2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    gap: 12px;
+    transition: ease-in all 0.4s;
+
+}
+
+.container-p .card img {
+    width: 354px;
+    height: 350px;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
+    margin-top: -2px;
+    border-bottom: 1px solid #363636;
+}
+
+.container-p .card p {
+    text-align: center;
+    letter-spacing: 0.5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.container-p .card:hover {
+    transform: scale(1.03);
+}
+
+
+/* Journey */
+
+.container-j {
+    height: calc(100vh - 147px);
+    background: #f6f6f6;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 86px;
+    padding-top: 70px;
+}
+
+.container-j .mid {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 8rem; */
+}
+
+.container-j .mid .one {
+    height: 50px;
+    width: 50px;
+    background: #e2e2e2;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+}
+
+.container-j .mid .one p {
+    z-index: 10;
+}
+
+.container-j .one .right-hr {
+    position: absolute;
+    border: 2px solid #e2e2e2;
+    width: 120px;
+    margin-left: 100px;
+    z-index: 1;
+}
+
+.container-j .one .left-hr {
+    position: absolute;
+    border: 2px solid #e2e2e2;
+    width: 120px;
+    margin-right: 100px;
+    z-index: 1;
+}
+
+.container-j .left {
+    display: flex;
+    flex-direction: column;
+    gap: 114px;
+    margin-top: 92px;
+    z-index: 2;
+}
+
+.container-j .left .card {
+    height: 180px;
+    width: 450px;
+    background: #fff;
+    box-shadow: 0 0 35px 20px #e2e2e2;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    transition: ease-in all 0.4s;
+    cursor: pointer;
+}
+
+.container-j .right {
+    display: flex;
+    flex-direction: column;
+    gap: 114px;
+    margin-top: -65px;
+    z-index: 2;
+}
+
+.container-j .right .card {
+    height: 180px;
+    width: 450px;
+    background: #fff;
+    box-shadow: 0 0 35px 20px #e2e2e2;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    transition: ease-in all 0.4s;
+    cursor: pointer;
+}
+
+.container-j .card p {
+    width: 80%;
+}
+
+.container-j .card:hover {
+    transform: scale(1.03);
+}
+
+.center {
+    height: 100px;
+    border: 2px solid #e2e2e2;
+    width: 0;
+}
+
+/* Contact */
+
+.container-c {
+    background: #f6f6f6;
+    height: calc(100vh - 77px);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-c form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    /* transform: scale(1.5); */
+}
+
+.container-c form div {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 3rem;
+}
+
+form div label {
+    width: 23%;
+    font-size: 27px;
+    padding-top: 5px;
+    text-align: start;
+}
+
+form div input,
+form div textarea {
+    width: 77%;
+    font-size: 25px;
+    padding: 4px;
+    padding-left: 12px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 0 15px 5px #e2e2e2;
+    columns: #e2e2e2;
+    transition: ease-in all 0.4s;
+}
+
+form div input:focus,
+form div textarea:focus {
+    transform: scale(1.04);
+}
+
+form button {
+    font-size: 30px;
+    padding: 6px;
+    width: 35%;
+    margin: auto;
+    margin-top: 1.5rem;
+    border: none;
+    background: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 0 0 15px 5px #e2e2e2;
+    transition: ease-in all 0.4s;
+}
+
+form button:hover {
+    transform: scale(1.05);
+}
