@@ -66,3 +66,45 @@ form button {
 form button:hover{
     transform: scale(1.05);
 }
+
+@media screen and (max-width:500px) {
+    .container-c {
+        display: flex;
+        height: calc(100dvh - 93px);
+        height: fit-content;
+        width: 100vw;
+    }
+
+    .container-c form {
+        width: 80%;
+        padding: 0;
+        margin: auto;
+        margin-left: 8%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .container-c form div {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .container-c form div label {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    form div input,
+    form div textarea {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    form button{
+        width: 50vw;
+        font-size: 20px;
+    }
+    
+}

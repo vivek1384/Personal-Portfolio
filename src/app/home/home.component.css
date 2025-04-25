@@ -443,3 +443,287 @@ form button {
 form button:hover {
     transform: scale(1.05);
 }
+
+.container-j2 {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+
+    .heading-a {
+        padding-left: 2rem;
+        padding-bottom: 1rem;
+    }
+
+    .heading-a h1 {
+        font-size: 76px;
+    }
+
+    .heading-a h2 {
+        font-size: 25px;
+        margin-left: -3rem;
+    }
+
+    .container {
+        /* display: none; */
+        flex-direction: column;
+        height: calc(100dvh - 35px);
+        gap: 3rem;
+    }
+
+    .container .left {
+        margin-top: -40vh;
+    }
+
+    .container .left .x {
+        font-size: 600px;
+    }
+
+    .container .left .x img {
+        left: 18%;
+        width: 65%;
+        top: 13vh;
+    }
+
+    .container .right {
+        margin-top: -12rem;
+        width: 100vw;
+    }
+
+    .container .right h1 {
+        width: 90%;
+        font-size: 21px;
+        margin: auto;
+    }
+
+    .container .right h1 span {
+        font-size: 32px;
+    }
+
+    .container .right p {
+        width: 90%;
+        margin: 0;
+        margin: auto;
+        font-size: 17px;
+    }
+
+    .container .right button {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+    .container .circle {
+        height: 600px;
+        width: 250px;
+        left: calc(50% - 125px);
+        top: calc(50% - 300px);
+    }
+
+
+    .container-a {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 2rem;
+    }
+
+    .container-a .left {
+        width: 85%;
+        text-align: justify;
+        margin: auto;
+        gap: 18px;
+    }
+
+    .container-a .left p {
+        font-size: 18px;
+    }
+
+    .container-a .right {
+        display: none;
+    }
+
+    .container-a .left button{
+        width: 40vw;
+    }
+
+    .container-s {
+        flex-direction: column;
+        width: 100vw;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .container-s .left,
+    .container-s .right {
+        width: 80%;
+        padding: 1rem;
+        gap: 4px;
+    }
+
+    .container-s .left h1,
+    .container-s .right h1 {
+        font-size: 22px;
+    }
+
+    .container-s .left img,
+    .container-s .right img {
+        width: 37px;
+    }
+
+    .container-s .left p,
+    .container-s .right p {
+        font-size: 14px;
+    }
+
+
+    .container-p {
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 1rem;
+        gap: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    .container-p .card {
+        width: 85%;
+        margin: auto;
+        height: fit-content;
+        padding: 0 0 1rem 0;
+    }
+
+    .container-p .card img {
+        width: 101%;
+    }
+
+    .container-p .card h2 {
+        font-size: 22px;
+    }
+
+    .container-p .card p {
+        font-size: 14px;
+    }
+
+    .container-j {
+        display: none;
+    }
+
+    .container-j2 {
+        display: flex;
+        height: fit-content;
+        height: 110vh;
+        background: #f6f6f6;
+        padding-bottom: 2rem;
+    }
+
+    .container-j2 .cards {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .container-j2 .cards .one {
+        width: 45px;
+        height: 45px;
+        background: #e2e2e2;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container-j2 .cards .one hr {
+        position: absolute;
+        z-index: 1;
+        width: 120px;
+        rotate: 90deg;
+        border: 3px solid #e2e2e2;
+    }
+
+    .container-j2 .cards .one .hr {
+        width: 100px;
+        margin-top: 4rem;
+    }
+
+    .container-j2 .cards .one p {
+        z-index: 10;
+        font-size: 22px;
+    }
+
+    .container-j2 .cards .card {
+        width: 90%;
+        background: #fff;
+        box-shadow: 0 0 35px 20px #e2e2e2;
+        border-radius: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: ease-in all 0.4s;
+        cursor: pointer;
+        z-index: 10;
+        padding: 4px 0;
+    }
+
+    .container-j2 .cards .card h1 {
+        font-size: 22px;
+    }
+
+    .container-j2 .cards .card h2 {
+        font-size: 18px;
+    }
+
+    .container-j2 .cards .card p {
+        font-size: 14px;
+        width: 90%;
+    }
+
+    .container-j2 .cards .card:hover {
+        transform: scale(1.04);
+    }
+
+    .container-c {
+        display: flex;
+        height: calc(100dvh - 93px);
+        height: fit-content;
+        width: 100vw;
+    }
+
+    .container-c form {
+        width: 80%;
+        padding: 0;
+        margin: auto;
+        margin-left: 8%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
+    .container-c form div {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+    }
+
+    .container-c form div label {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    form div input,
+    form div textarea {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    form button {
+        width: 50vw;
+        font-size: 20px;
+    }
+
+}

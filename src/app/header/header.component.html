@@ -1,6 +1,6 @@
 <div class="container">
     <div class="left">
-        <h1>Vivek R. Dudhatra</h1>
+        <h1 style="cursor: pointer;" routerLink="/">Vivek R. Dudhatra</h1>
     </div>
     <div class="right">
         <p routerLink="/" routerLinkActive="active">Home</p>
@@ -8,4 +8,27 @@
         <p routerLink="/project" routerLinkActive="active">Project</p>
         <p routerLink="/contact" routerLinkActive="active">Contact</p>
     </div>
+</div>
+
+<div class="container-m">
+    <div class="header">
+        <h2 routerLink="/">Vivek R. Dudhatra</h2>
+        @if(!isMenu){
+        <span (click)="openMenu()">
+            <fa-icon [icon]="faMenu"></fa-icon>
+        </span>
+        }@else {
+        <span (click)="closeMenu()">
+            <fa-icon [icon]="faClose"></fa-icon>
+        </span>
+        }
+    </div>
+    @if(isMenu){
+        <div class="menu">
+            <p routerLink="/">Home</p>
+            <p routerLink="/about">About</p>
+            <p routerLink="/project">Peoject</p>
+            <p routerLink="/contact">Contact</p>
+        </div>
+    }
 </div>

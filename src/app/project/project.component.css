@@ -39,3 +39,33 @@
 .container .card:hover{
     transform: scale(1.03);
 }
+
+@media screen and (max-width:500px) {
+    .container {
+        flex-direction: column;
+        height: fit-content;
+        padding-top: 1rem;
+        gap: 2rem;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .container .card {
+        width: 85%;
+        margin: auto;
+        height: fit-content;
+        padding: 0 0 1rem 0;
+    }
+
+    .container .card img {
+        width: 101%;
+    }
+
+    .container .card h2 {
+        font-size: 22px;
+    }
+
+    .container .card p {
+        font-size: 14px;
+    }
+}

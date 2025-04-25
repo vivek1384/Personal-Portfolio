@@ -59,3 +59,32 @@
     height: 100%;
     width: auto;
 }
+
+@media screen and (max-width:500px) {
+    .container {
+        flex-direction: column;
+        height: fit-content;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+
+    .container .left {
+        width: 85%;
+        text-align: justify;
+        margin: auto;
+        gap: 18px;
+    }
+
+    .container .left p {
+        font-size: 18px;
+    }
+
+    .container .left button{
+        width: 150px;
+    }
+
+    .container .right {
+        display: none;
+    }
+    
+}
