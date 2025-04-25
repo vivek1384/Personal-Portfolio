@@ -1,13 +1,12 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
-import { FooterComponent } from '../footer/footer.component';
 import { RouterLink } from '@angular/router';
-
-
+import { AboutComponent } from '../about/about.component';
+import { ProjectComponent } from '../project/project.component';
+import { ContactComponent } from '../contact/contact.component';
 
 @Component({
   selector: 'app-home',
-  imports: [HeaderComponent, FooterComponent, RouterLink],
+  imports: [RouterLink, AboutComponent, ProjectComponent, ContactComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
@@ -15,5 +14,4 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
     window.scroll(0, 0);
   }
-
 }

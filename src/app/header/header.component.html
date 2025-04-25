@@ -25,10 +25,10 @@
     </div>
     @if(isMenu){
         <div class="menu">
-            <p routerLink="/">Home</p>
-            <p routerLink="/about">About</p>
-            <p routerLink="/project">Peoject</p>
-            <p routerLink="/contact">Contact</p>
+            <p routerLink="/" (click)="closeMenu()">Home</p>
+            <p routerLink="/about" (click)="closeMenu()">About</p>
+            <p routerLink="/project" (click)="closeMenu()">Peoject</p>
+            <p routerLink="/contact" (click)="closeMenu()">Contact</p>
         </div>
     }
 </div>
