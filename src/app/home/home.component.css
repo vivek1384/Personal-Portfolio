@@ -83,6 +83,26 @@
 }
 
 
+.heading-a {
+    height: 77px;
+    display: flex;
+    align-items: center;
+    padding-left: 4rem;
+    background: #f6f6f6;
+}
+
+.heading-a h1 {
+    font-size: 90px;
+    opacity: 0.3;
+    margin-top: 1rem;
+}
+
+.heading-a h2 {
+    margin-left: -50px;
+    font-size: 29px;
+    margin-top: 1rem;
+}
+
 /* Service */
 
 .container-s {
