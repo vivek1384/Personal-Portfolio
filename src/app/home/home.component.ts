@@ -12,6 +12,12 @@ import { ContactComponent } from '../contact/contact.component';
 })
 export class HomeComponent implements OnInit {
   ngOnInit(): void {
+    // debugger
     window.scroll(0, 0);
+    setTimeout(() => {
+      this.isLoad = false
+    }, 2000);
   }
+
+  isLoad = true
 }

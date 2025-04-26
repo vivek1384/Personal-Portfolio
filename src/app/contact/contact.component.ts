@@ -1,15 +1,20 @@
 import { Component, OnInit } from '@angular/core';
-import { HeaderComponent } from '../header/header.component';
-import { FooterComponent } from '../footer/footer.component';
+
 
 @Component({
   selector: 'app-contact',
-  imports: [HeaderComponent, FooterComponent],
+  imports: [],
   templateUrl: './contact.component.html',
   styleUrl: './contact.component.css',
 })
 export class ContactComponent implements OnInit {
   ngOnInit(): void {
-    window.scroll(0, 0);
-  }
+    // debugger
+    window.scroll(0,0)
+    setTimeout(() => {
+      this.isLoad  = false
+    }, 1500);
+}
+
+isLoad = true;
 }
