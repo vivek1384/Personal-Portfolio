@@ -13,22 +13,22 @@
 <div class="container-m">
     <div class="header">
         <h2 routerLink="/">Vivek R. Dudhatra</h2>
-        @if(!isMenu){
+        @if(isMenu == 'hidden'){
         <span (click)="openMenu()">
             <fa-icon [icon]="faMenu"></fa-icon>
         </span>
         }@else {
-        <span (click)="closeMenu()">
+        <span (click)="openMenu()">
             <fa-icon [icon]="faClose"></fa-icon>
         </span>
         }
     </div>
     @if(isMenu){
-        <div class="menu">
-            <p routerLink="/" (click)="closeMenu()">Home</p>
-            <p routerLink="/about" (click)="closeMenu()">About</p>
-            <p routerLink="/project" (click)="closeMenu()">Peoject</p>
-            <p routerLink="/contact" (click)="closeMenu()">Contact</p>
+        <div class="menu" [@slideInOut]="isMenu">
+            <p routerLink="/" (click)="openMenu()">Home</p>
+            <p routerLink="/about" (click)="openMenu()">About</p>
+            <p routerLink="/project" (click)="openMenu()">Peoject</p>
+            <p routerLink="/contact" (click)="openMenu()">Contact</p>
         </div>
     }
 </div>
