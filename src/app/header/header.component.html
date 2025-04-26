@@ -23,7 +23,7 @@
         </span>
         }
     </div>
-    @if(isMenu){
+    @if(isMenu == 'visible'){
         <div class="menu" [@slideInOut]="isMenu">
             <p routerLink="/" (click)="openMenu()">Home</p>
             <p routerLink="/about" (click)="openMenu()">About</p>
