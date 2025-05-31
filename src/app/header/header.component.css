@@ -36,9 +36,8 @@
     .container-m{
         display: flex;
         flex-direction: column;
-        background: #9a9a9a;
+        background: #f6f6f6;
         padding: 10px 0;
-        color : #f6f6f6
     }
     .container-m .header{
         display: flex;
@@ -64,6 +63,8 @@
         height: calc(100dvh - 100px);
         top: 45px;
         backdrop-filter: blur(20px);
+        background-color : #000
+        color : #f6f6f6
         z-index: 100;
         padding: 4rem 0;
     }
