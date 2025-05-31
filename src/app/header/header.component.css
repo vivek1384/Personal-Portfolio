@@ -36,8 +36,9 @@
     .container-m{
         display: flex;
         flex-direction: column;
-        background: #f6f6f6;
+        background: #9a9a9a;
         padding: 10px 0;
+        color : #f6f6f6
     }
     .container-m .header{
         display: flex;
