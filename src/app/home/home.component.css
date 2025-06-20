@@ -316,12 +316,12 @@
     }
 
     .container .left .x {
-        font-size: 600px;
+        font-size: 500px;
     }
 
     .container .left .x img {
-        left: 18%;
-        width: 65%;
+        left: 22%;
+        width: 55%;
         top: 13vh;
     }
 
